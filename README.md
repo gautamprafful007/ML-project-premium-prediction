@@ -1,4 +1,4 @@
-🧠 ML Project: Insurance Premium Prediction.
+<h1>🧠 ML Project: Insurance Premium Prediction.</h1>
 
 A machine learning project that predicts health insurance premiums using user features such as age, BMI, smoker status, etc.
 Based on Codebasics ML course workflows 
