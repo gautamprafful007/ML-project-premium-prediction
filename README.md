@@ -3,7 +3,7 @@
 A machine learning project that predicts health insurance premiums using user features such as age, BMI, smoker status, etc.
 Based on Codebasics ML course workflows 
 
-📁 Project Structure
+<h2>📁 Project Structure</h2>
 
 arduino
 Copy
@@ -14,7 +14,7 @@ Edit
 ├── artifacts/             # (optional) trained models, scalers
 └── README.md
 
-🚀 Getting Started
+<h2>🚀 Getting Started</h2>
 
 1. Clone the repository
 bash
@@ -30,7 +30,7 @@ Edit
 pip install -r requirements.txt
 
 
-🧪 Overview of the Workflow
+<h2>🧪 Overview of the Workflow</h2>
 
 1. Data Loading & Exploration
 Load the dataset (e.g., insurance.csv) containing features: age, sex, bmi, children, smoker, region, and target charges.
@@ -67,7 +67,7 @@ Accept input values (e.g., via CLI or a simple UI).
 Use helper functions to preprocess and predict.
 Display output premium estimate.
 
-🛠️ Run & Test the Script
+<h2>🛠️ Run & Test the Script</h2>
 
 bash
 Copy
@@ -88,20 +88,20 @@ Edit
 }
 It will preprocess and return the predicted premium amount.
 
-📊 Results & Insights
+<h2>📊 Results & Insights</h2>
 
 Visualizations help understand how features like smoking status or BMI impact insurance cost.
 Correlation analysis confirms strong association particularly of smoker with charges (~0.78 correlation) 
 Model evaluations typically show Random Forest or XGBoost outperform others in RMSE and R² metrics.
 
-🔋 Future Enhancements
+<h2>🔋 Future Enhancements</h2>
 
 Expand feature space: include more inputs (e.g., medical history, insurance type).
 Use more advanced preprocessing (e.g., missing value imputation, polynomial features).
 Convert into a web app (Flask/Streamlit) and deploy (e.g. Heroku) for real-time interactivity.
 Provide confidence intervals or future cost trends based on user’s health change trajectory.
 
-🧾 Requirements
+<h2>🧾 Requirements</h2>
 
 Listed in requirements.txt:
 
@@ -113,11 +113,11 @@ matplotlib, seaborn
 
 (If used) xgboost, feature_engine, pickle, flask
 
-📜 License
+<h2>📜 License</h2>
 
 Licensed under Apache‑2.0 (as seen in the upstream project) 
 
-✉️ Acknowledgments
+<h2>✉️ Acknowledgments</h2>
 
 Inspired by the Codebasics ML Course health insurance prediction example 
 
