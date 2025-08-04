@@ -5,62 +5,69 @@ Based on Codebasics ML course workflows
 
 <h2>📁 Project Structure</h2>
 
-arduino
-Copy
-Edit
-├── main.py
-├── prediction_helper.py
-├── requirements.txt
-├── artifacts/             # (optional) trained models, scalers
-└── README.md
+Copy<br>
+Edit<br>
+├── main.py<br>
+├── prediction_helper.py<br>
+├── requirements.txt<br>
+├── artifacts/             # (optional) trained models, scalers<br>
+└── README.md<br>
 
 <h2>🚀 Getting Started</h2>
 
-1. Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/gautamprafful007/ML-project-premium-prediction.git
-cd ML-project-premium-prediction
+<li>Clone the repository</li>
 
-2. Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
+bash<br>
+Copy<br>
+Edit<br>
+git clone https://github.com/gautamprafful007/ML-project-premium-prediction.git<br>
+cd ML-project-premium-prediction<br>
+
+<li>Install dependencies</li>
+
+bash<br>
+Copy<br>
+Edit<br>
+pip install -r requirements.txt<br>
 
 
 <h2>🧪 Overview of the Workflow</h2>
 
-1. Data Loading & Exploration
+<li>Data Loading & Exploration</li>
+
 Load the dataset (e.g., insurance.csv) containing features: age, sex, bmi, children, smoker, region, and target charges.
 Perform exploratory data analysis (EDA):
-Check null values and duplicates
+Check null values and duplicates<br>
 Plot distributions (pie charts, box plots, scatter plots) to understand feature-target relationships (e.g., smokers vs premium) 
 
-2. Preprocessing
-Encode categorical variables: sex, smoker, region as numeric labels.
-Detect and handle outliers (e.g., in BMI using IQR and capping) 
-Scale and normalize numerical features if necessary.
+<li>Preprocessing</li>
 
-3. Feature Engineering
+Encode categorical variables: sex, smoker, region as numeric labels.<br>
+Detect and handle outliers (e.g., in BMI using IQR and capping)<br>
+Scale and normalize numerical features if necessary.<br>
+
+<li>Feature Engineering</li>
+
 Correlation analysis to identify features most impacting the charges.
 Final selection of relevant input features (e.g., age, sex, BMI, smoker) 
 
-4. Model Development & Evaluation
+<li>Model Development & Evaluation</li>
+
 Split data into training and test sets (e.g., 80/20).
-Train multiple ML models:
+Train multiple ML models:<br>
 Linear Regression, Decision Tree, Random Forest, XGBoost, KNN, Gradient Boosting.
-Compare performance using metrics like RMSE and R².
+Compare performance using metrics like RMSE and R².<br>
 Select the best-performing model (often Random Forest or XGBoost) 
 
-5. Prediction Helper (prediction_helper.py)
+<li>Prediction Helper (prediction_helper.py)</li>
+
 Contains functions:
 preprocess_input(): encodes and scales new user input.
 predict_premium(): loads the trained model and outputs premium prediction.
 Optional risk scoring or auxiliary processing logic.
 
-6. Main Script (main.py)
+<li>Main Script (main.py)</li>
+
 Integrates data flow:
 Load model and helper.
 Accept input values (e.g., via CLI or a simple UI).
@@ -69,14 +76,14 @@ Display output premium estimate.
 
 <h2>🛠️ Run & Test the Script</h2>
 
-bash
-Copy
-Edit
-python main.py
+bash<br>
+Copy<br>
+Edit<br>
+python main.py<br>
 You can supply a test input dictionary like:
 
-python
-Copy
+python<br>
+Copy<br>
 Edit
 {
   "age": 30,
